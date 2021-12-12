@@ -3,9 +3,15 @@ server:
   port: 8091
   error:
     include-message: always
+
 spring:
   jpa:
     defer-datasource-initialization: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
   
 
 #  # To see H2 console in browser
