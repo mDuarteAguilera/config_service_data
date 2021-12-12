@@ -1,0 +1,14 @@
+#app config
+server:
+  port: 8099
+  error:
+    include-message: always
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serverUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
