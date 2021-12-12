@@ -1,0 +1,43 @@
+#app config
+server:
+  port: 8091
+  error:
+    include-message: always
+spring:
+  jpa:
+    defer-datasource-initialization: true
+  
+
+#  # To see H2 console in browser
+#  # http://localhost:8091/h2-console
+#  # enabling console
+#spring:
+#  h2:
+#     # JPA
+#    jpa: 
+#      defer-datasource-initialization: true
+#      show-sql: true
+#      hibernate:
+#        ddl-auto: update
+#      database-plataform: org.hibernate.dialect.H2Dialect
+#      properties:
+#        hibernate:
+#          sow_sql: true
+#          use_sql_comments: false
+#          format_sql: false
+#          
+#    console:
+#      enabled: true
+#    # DB
+#    datasource:
+#      url: jdbc:h2:mem:productDB;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS productDB
+#      driverClassName: org.h2.Driver
+#      platform: h2
+#      username: sa
+#      password: 
+#    
+# 
+#    logging:
+#      pattern:
+#        console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+#      
