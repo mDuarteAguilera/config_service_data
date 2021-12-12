@@ -3,21 +3,17 @@ server:
   port: 8092
   error:
     include-message: always
+    
 spring:
   jpa:
     defer-datasource-initialization: true
   application:
     name: customer-service
-  cloud:
-    config:
-      uri: http://localhost:8081
-      username: root
-      password: s3cr3t
-      enabled: false
-  boot:
-    admin:
-      client:
-        url: http://localhost:8086
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
         
 #  # To see H2 console in browser
 #  # http://localhost:8091/h2-console
